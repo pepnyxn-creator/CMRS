@@ -1,0 +1,18 @@
+CREATE TABLE settings (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    condo_name VARCHAR(150) NOT NULL,
+
+    logo VARCHAR(255) NULL,
+
+    sticker_prefix VARCHAR(10) NOT NULL,
+
+    next_sticker_number INT NOT NULL DEFAULT 1,
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP
+
+);
