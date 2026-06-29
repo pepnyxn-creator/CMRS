@@ -6,7 +6,7 @@ CREATE TABLE registrations (
 
     vehicle_id BIGINT NOT NULL,
 
-    sticker_code VARCHAR(20) NOT NULL UNIQUE,
+    sticker_code VARCHAR(50) NOT NULL UNIQUE,
 
     status ENUM(
         'ACTIVE',
